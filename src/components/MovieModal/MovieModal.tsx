@@ -8,11 +8,7 @@ interface MovieModalProps {
   onClose: () => void;
 }
 
-// const modalRoot = document.getElementById('modal-root') as HTMLElement;
-
 export const MovieModal = ({ movie, onClose }: MovieModalProps) => {
-  //   if (!movie) return null;
-
   const handleBackdropClick = (event: React.MouseEvent<HTMLDivElement>) => {
     if (event.target === event.currentTarget) {
       onClose();
